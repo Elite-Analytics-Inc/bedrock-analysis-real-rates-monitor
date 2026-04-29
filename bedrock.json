@@ -1,0 +1,1 @@
+{"analysis_name":"real-rates-monitor","inputs":["bedrock.finance.fred_macro"],"params_schema":{"start_date":{"type":"string","default":"2010-01-01"}},"resources":{"requests":{"cpu":"1","memory":"2Gi"},"limits":{"cpu":"2","memory":"4Gi"}}}
