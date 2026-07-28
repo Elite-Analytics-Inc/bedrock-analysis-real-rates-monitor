@@ -20,7 +20,10 @@ jobs:
         with:
           context: .
           push: true
+          provenance: false
           platforms: linux/arm64
-          tags: ghcr.io/elite-analytics-inc/bedrock-analysis-real-rates-monitor:latest
+          tags: |
+            ghcr.io/elite-analytics-inc/bedrock-analysis-real-rates-monitor:latest
+            ghcr.io/elite-analytics-inc/bedrock-analysis-real-rates-monitor:sha-${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
